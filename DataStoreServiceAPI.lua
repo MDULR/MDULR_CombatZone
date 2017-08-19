@@ -10,7 +10,7 @@ local Key = "MDLR:"..Player.UserId
 		Deaths.Value = PlayerSave[5]
 		TimePlayed.Value = PlayerSave[6]
 	else
-		local ValuesToInput = {Credits.Value, Faction.Value, Level.Value, Kills.Value, Deaths.Value, TimePlayed.Value} --Make sure these are in order according to datastore
+		local ValuesToInput = {Credits.Value, "NONE", "O", Kills.Value, Deaths.Value, TimePlayed.Value} --Make sure these are in order according to datastore
 		ServerDataStore:SetAsync(Key, ValuesToInput)
 	end
 	
