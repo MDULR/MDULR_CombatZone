@@ -1,5 +1,7 @@
 local ServerDataStore = game:GetService("DataStoreService"):GetDataStore("PlayerStats")
 
+local Key = "MDLR:"..Player.UserId
+
 	if PlayerSave then
 		Credits.Value = PlayerSave[1]
 		Faction.Value = PlayerSave[2]
